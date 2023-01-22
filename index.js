@@ -12,3 +12,12 @@ function sumOfDateOfBirth() {
   }
   return sum;
 }
+function isYourBirthdayLucky() {
+  var sum = sumOfDateOfBirth();
+  if (sum % luckyNumber.value === 0) {
+    outputBox.innerText = "Your birthday is lucky.";
+  } else {
+    outputBox.innerText = "Your birthday is not lucky.";
+  }
+}
+checkBtn.addEventListener("click", isYourBirthdayLucky);
