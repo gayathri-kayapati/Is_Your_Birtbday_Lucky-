@@ -3,6 +3,8 @@ var luckyNumber = document.querySelector("#lucky-number");
 var checkBtn = document.querySelector("#check-btn");
 var outputBox = document.querySelector("#output");
 
+outputBox.style.display = "none";
+
 function sumOfDateOfBirth() {
   var dobValue = dateOfBirth.value;
   var dob = dobValue.replaceAll("-", "");
@@ -15,8 +17,10 @@ function sumOfDateOfBirth() {
 function isYourBirthdayLucky() {
   var sum = sumOfDateOfBirth();
   if (sum % luckyNumber.value === 0) {
+    outputBox.style.display = "block";
     outputBox.innerText = "Your birthday is lucky.";
   } else {
+    outputBox.style.display = "block";
     outputBox.innerText = "Your birthday is not lucky.";
   }
 }
