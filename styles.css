@@ -26,10 +26,11 @@ button {
   min-width: 5%;
   height: 2rem;
   font-size: 1rem;
-  background-color: rgb(11, 189, 121);
+  background-color: black;
+  color: white;
 }
 button:hover {
-  background-color: darkkhaki;
+  background-color: gray;
   cursor: pointer;
 }
 textarea {
