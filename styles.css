@@ -3,6 +3,13 @@
 body {
   font-family: "Asul", sans-serif;
 }
+label {
+  display: block;
+}
 button {
   font-family: "Asul", sans-serif;
+  display: block;
+}
+textarea {
+  display: block;
 }
