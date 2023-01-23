@@ -18,10 +18,10 @@ function isYourBirthdayLucky() {
   var sum = sumOfDateOfBirth();
   if (sum % luckyNumber.value === 0) {
     outputBox.style.display = "block";
-    outputBox.innerText = "Your birthday is lucky.";
+    outputBox.innerText = luckyNumber.value + " Is a lucky number!🥳";
   } else {
     outputBox.style.display = "block";
-    outputBox.innerText = "Your birthday is not lucky.";
+    outputBox.innerText = luckyNumber.value + " Is not that lucky 😕";
   }
 }
 checkBtn.addEventListener("click", isYourBirthdayLucky);
